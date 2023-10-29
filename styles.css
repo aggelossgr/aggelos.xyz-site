@@ -36,7 +36,7 @@ h2.main {
     }
 }
 
--scrollbar here
+/* scrollbar here */
 ::-webkit-scrollbar {
     width: 12px;
     background-color: #111;
