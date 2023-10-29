@@ -1,61 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 25px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-nav a:hover {
-    color: #00FFFF;
-    text-decoration-line: underline;
-}
-
-
-main {
-    padding: 20px;
+    background-color: #121212;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section {
-    margin-bottom:600px;
-    padding-left: 800px;
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-h2 {
-    color: #333;
+h2.main {
+    color: #f2f2f2;
+    font-size: 27px;
+    text-align: center;
     padding: 20px;
 }
 
-footer {
-    background-color: #050505;
-    color: #fff;
-    text-align: center;
-    padding: 1px;
+@media (max-width: 768px) {
+    h2.main {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2.main {
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
+-scrollbar here
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #111;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888888;
+    border: 2px solid #888888;
+    border-radius: 15px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #111 #888888;
 }
